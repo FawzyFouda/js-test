@@ -1,0 +1,129 @@
+body, html {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    font-family: "Tajawal", sans-serif !important;
+    font-weight: 700;
+    font-style: normal;
+    background-image: url('/bg-one.jpg');
+
+}
+h1{
+    font-family: "Tajawal", sans-serif !important;
+
+}
+.animation-div {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 20%;
+    height: 0;
+    background-color: rgba(0, 0, 0, 0.603);
+    background-size: cover; /* لتغطية كامل المساحة */
+    background-position: center; /* لتوسيط الصورة */
+    z-index: 1;
+    animation: heightThenWidth 3s 1.5s forwards; /* تأخير الرسوم المتحركة لمدة 1.5 ثانية*/
+}
+.imgCover{
+    animation: SlideDown 2s 4.5s forwards; /* إضافة تأثيرين متحركين */
+
+}
+@keyframes heightThenWidth {
+    0% {
+        height: 0;
+        width: 20%;
+    }
+    50% {
+        height: 100vh;
+        width: 20%;
+    }
+    100% {
+        height: 100vh;
+        width: 100vw;
+    }
+}
+
+.landing-page {
+    position: absolute;
+    top: 0;
+    left: 100vw;
+    width: calc(100vw - 40px); /* لتحديد عرض الصفحة بخصم المسافة */
+    height: calc(100vh - 40px); /* لتحديد ارتفاع الصفحة بخصم المسافة */
+    background-color: white;
+    z-index: 2;
+    display: flex;
+    justify-content: center;
+    left: 100vw;
+    align-items: center;
+    margin: 20px; /* تحديد المسافة من كل الجوانب */
+    animation: slideIn 2s 4.5s forwards; /* إضافة تأثيرين متحركين */
+    border-radius: 5px;
+    overflow: hidden;
+}
+
+@keyframes slideIn {
+    0% {
+        left: 100vw;
+    }
+    100% {
+        left: 0;
+    }
+}
+.typing-animation {
+    font-size: 24px;
+    font-family: Arial, sans-serif;
+    padding: 20px;
+    text-align: center;
+    direction: rtl; /* للكتابة من اليمين إلى اليسار */
+}
+
+
+
+#days,#hours,#minutes,#seconds{
+    font-family: "Dosis", sans-serif;
+    font-size: 2rem;
+
+}
+
+.counter{
+    opacity: 0;
+}
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+.fade {
+    animation: fadeIn 1s ease-in-out 9.8s forwards; /* يظهر بعد مرور ثانيتين */
+}
+
+
+
+
+
+
+.color-change-div {
+    width: 100%;
+
+
+    animation: colorChange 1s 10s infinite; /* تغيير الألوان كل 4 ثوانٍ بشكل متكرر */
+    transition: background-color 1.5s ease-in-out; /* تأثير التلاشي */
+}
+
+
+.wrapper {
+    background: linear-gradient(45deg ,#24AADB, #0a8ba1,#201677);
+    background-size: 600% 100%;
+    animation: gradient 16s linear infinite;
+    animation-direction: alternate;
+}
+@keyframes gradient {
+    0% {background-position: 0%}
+    100% {background-position: 100%}
+}

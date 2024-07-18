@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animation Example</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Dosis:wght@200..800&family=Tajawal:wght@200;300;400;500;700;800;900&display=swap" rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com"></script>
+
+</head>
+<body>
+    <div class="animation-div">
+    <div class="landing-page flex flex-col rounded-[5px] ">
+        <div class="color-change-div wrapper overflow-hidden  absolute top-0 mx-[20px] flex justify-center items-center h-[250px]">
+            <img src="logo-removebg-preview.png" alt="" class="w-[30%] absolute h-[100%]">
+        </div>
+        <h1 id="title" class="text-[2rem] my-[50px] typing-animation top-[50%] absolute"></h1>
+        <div class="py-4 px-6  top-[80%] absolute">
+            <div class="flex flex-wrap gap-4 justify-center items-center fade counter">
+                <div class=" px-4 py-2 flex justify-center flex-col items-center bg-[#0a2aa4] wrapper text-[#FFB200] rounded-[5px]">
+                    <div id="days" class="font-bold font-mono text-2xl text-dark"></div>
+                    <div class="text-[#FFF] font-thin">DAYS</div>
+                </div>
+                <div class=" px-4 py-2 flex justify-center flex-col items-center bg-[#0a2aa4] wrapper text-[#FFB200] rounded-[5px]">
+                    <div id="hours" class="font-bold font-mono text-2xl text-dark"></div>
+                    <div class="text-[#FFF] font-thin">HOURS</div>
+                </div>
+                <div class=" px-4 py-2 flex justify-center flex-col items-center bg-[#0a2aa4] wrapper text-[#FFB200] rounded-[5px]">
+                    <div id="minutes" class="font-bold font-mono text-2xl text-dark"></div>
+                    <div class="text-[#FFF] font-thin">MINUTES</div>
+                </div>
+                <div class=" px-4 py-2 flex justify-center flex-col items-center bg-[#0a2aa4] wrapper text-[#FFB200] rounded-[5px]">
+                    <div id="seconds" class="font-bold font-mono text-2xl text-dark"></div>
+                    <div class="text-[#FFF] font-thin">SECONDS</div>
+                </div>
+            </div>
+        </div>
+        
+    </div>
+</div>
+    <script src="script.js"></script>
+</body>
+</html>
